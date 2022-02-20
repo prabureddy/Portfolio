@@ -9,7 +9,7 @@ const About = () => {
     <section>
       <div className={cl(CSS.container)}>
         <div className={cl(CSS.meta)}>
-          <h3>Bhargava Prabu Reddy.</h3>
+          <h3 className={cl(CSS.name)}>Bhargava Prabu Reddy.</h3>
           <div className={cl(CSS["profile-picture"])}>
             <Image
               layout="fill"
@@ -20,10 +20,8 @@ const About = () => {
             <span className={cl(CSS["ring-container"])} />
           </div>
         </div>
-        <h1 className="text-6xl font-bold leading-relaxed tracking-wide">
-          I am a Software enthusiast.
-        </h1>
-        <p>
+        <h1 className={cl(CSS["sub-title"])}>I am a Software enthusiast.</h1>
+        <p className={cl(CSS.description)}>
           Hi, I’m Prabu. I live in sunny India 🇮🇳 and specialized in building
           web applications using JavaScipt. I have built softwares that helps
           people in their day-to-day life. Currently, I’m focused on building
