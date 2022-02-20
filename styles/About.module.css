@@ -14,7 +14,7 @@
   @apply relative  w-[300px] h-[300px] mix-blend-multiply transition-all duration-300 mb-2 p-0;
 }
 
-.profile-picture img {
+.profile-picture .profile-pic {
   @apply rounded-lg overflow-hidden;
 }
 

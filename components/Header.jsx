@@ -32,7 +32,7 @@ const Header = () => {
           {navItems.map(({ label, link }, i) => (
             <li key={i} tabIndex="0">
               <a href={link} className={cl(CSS["nav-item"])} tabIndex="-1">
-                <span>{i + 1}.</span>
+                <span className={cl(CSS["counter"])}>{i + 1}.</span>
                 {label}
               </a>
             </li>

@@ -23,7 +23,7 @@
   @apply transition-all duration-300;
 }
 
-.nav-item span {
+.nav-item .counter {
   @apply mr-2;
   color: #f16c6c;
 }

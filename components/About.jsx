@@ -15,6 +15,7 @@ const About = () => {
               layout="fill"
               src={PROFILE_PIC}
               alt="Bhargava Prabu Reddy"
+              className={cl(CSS["profile-pic"])}
             />
             <span className={cl(CSS["ring-container"])} />
           </div>

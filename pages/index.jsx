@@ -6,9 +6,9 @@ import cl from "classnames";
 export default function Home() {
   return (
     <div className={cl(CSS.container)}>
-      <div>
+      <div className={cl(CSS["layout"])}>
         <Header />
-        <main>
+        <main className={cl(CSS.content)}>
           <About />
         </main>
       </div>
