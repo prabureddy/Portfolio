@@ -1,16 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Inter", sans-serif;
+  @apply h-full;
+}
+
+body {
+  @apply bg-gradient-to-tr from-indigo-200 via-red-200 to-yellow-100 bg-no-repeat cursor-cell;
 }
 
 a {
-  color: inherit;
   text-decoration: none;
+  text-decoration-skip-ink: auto;
+  @apply font-bold text-link cursor-ne-resize inline-block relative;
 }
 
 * {
   box-sizing: border-box;
+}
+
+:focus {
+  @apply outline-4 outline-dashed outline-red-300 outline-offset-4;
+}
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-effect {
+  @apply inline-block relative;
+}
+
+.underline-effect:after {
+  @apply content-[""] rounded-lg absolute w-full px-5 h-1 top-6 left-0 bg-secondary origin-bottom-right transition-transform duration-300 ease-out;
+  transform: scaleX(0);
+}
+.underline-effect:hover:after {
+  @apply origin-bottom-left bg-link;
+  transform: scaleX(1);
 }

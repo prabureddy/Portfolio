@@ -1,0 +1,29 @@
+.nav {
+  @apply sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30;
+}
+
+.container {
+  @apply flex items-center justify-between h-16;
+}
+
+.logo {
+  @apply text-2xl text-gray-900 font-semibold;
+}
+
+.pages {
+  @apply flex space-x-4 text-gray-900;
+}
+
+.nav-item {
+  @apply p-1;
+}
+
+.nav-item:hover {
+  color: #f16c6c;
+  @apply transition-all duration-300;
+}
+
+.nav-item span {
+  @apply mr-2;
+  color: #f16c6c;
+}

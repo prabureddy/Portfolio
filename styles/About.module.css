@@ -1,0 +1,31 @@
+.container {
+  @apply flex justify-center flex-col;
+}
+
+.meta {
+  @apply flex space-x-32 items-end;
+}
+
+.meta h3 {
+  @apply text-4xl font-medium leading-relaxed tracking-wide;
+}
+
+.profile-picture {
+  @apply relative  w-[300px] h-[300px] mix-blend-multiply transition-all duration-300 mb-2;
+}
+
+.profile-picture img {
+  @apply rounded-lg overflow-hidden;
+}
+
+.profile-picture:hover {
+  @apply mix-blend-normal;
+}
+
+.ring-container {
+  @apply absolute bottom-6 left-6 rounded-lg border-4 border-secondary w-full h-full z-[-1] transition-all duration-300;
+}
+
+.profile-picture:hover .ring-container {
+  @apply bottom-3 left-3;
+}

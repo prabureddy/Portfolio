@@ -1,0 +1,11 @@
+.container {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32' width='32' height='32' fill='none' stroke='rgb(15 23 42 / 0.04)'><path d='M0 .5H31.5V32'/></svg>");
+}
+
+.container section {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.container section main {
+  @apply mt-12 max-w-4xl mx-auto;
+}
