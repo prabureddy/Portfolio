@@ -13,7 +13,7 @@
 }
 
 .profile-picture {
-  @apply relative  w-[300px] h-[300px] mix-blend-multiply transition-all duration-300 mb-2 p-0;
+  @apply relative  w-[300px] h-[300px] mix-blend-multiply backdrop-opacity-100 transition-all duration-300 mb-2 p-0;
   animation: slide-in-blurred-tr 0.5s cubic-bezier(0.23, 1, 0.32, 1) 1.2s both;
 }
 

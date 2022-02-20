@@ -8,11 +8,15 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Inter", sans-serif;
-  @apply h-full;
+  height: 100%;
 }
 
 body {
-  @apply bg-gradient-to-tr from-indigo-200 via-red-200 to-yellow-100 bg-no-repeat cursor-cell;
+  @apply cursor-cell;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 a {
@@ -21,8 +25,8 @@ a {
   @apply font-bold text-link cursor-ne-resize inline-block relative;
 }
 
-* {
-  box-sizing: border-box;
+section {
+  @apply h-full w-full;
 }
 
 p > a:focus {

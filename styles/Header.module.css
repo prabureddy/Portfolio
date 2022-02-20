@@ -1,5 +1,17 @@
 .nav {
-  @apply sticky top-0 z-10 backdrop-filter backdrop-blur-lg bg-opacity-30;
+  @apply sticky top-0 z-10 backdrop-filter backdrop-blur bg-opacity-50;
+}
+
+.container {
+  @apply flex items-center justify-around h-[6rem] mx-auto;
+}
+
+.logo {
+  @apply text-2xl text-gray-900 font-semibold flex items-center justify-center;
+}
+
+.pages {
+  @apply flex space-x-4 text-gray-900;
 }
 
 .nav-item {
@@ -22,18 +34,6 @@
     filter: blur(0);
     opacity: 1;
   }
-}
-
-.container {
-  @apply flex items-center justify-between h-[6rem];
-}
-
-.logo {
-  @apply text-2xl text-gray-900 font-semibold flex-auto;
-}
-
-.pages {
-  @apply flex space-x-4 text-gray-900;
 }
 
 .nav-item-link {
