@@ -7,7 +7,7 @@
 }
 
 .logo {
-  @apply text-2xl text-gray-900 font-semibold;
+  @apply text-2xl text-gray-900 font-semibold flex-auto;
 }
 
 .pages {

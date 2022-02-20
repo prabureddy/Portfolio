@@ -25,6 +25,11 @@ a {
   box-sizing: border-box;
 }
 
+
+p > a:focus {
+  @apply outline-none;
+}
+
 :focus {
   @apply outline-4 outline-dashed outline-red-300 outline-offset-4;
 }
@@ -40,10 +45,10 @@ a {
 }
 
 .underline-effect:after {
-  @apply content-[""] rounded-lg absolute w-full px-5 h-1 top-6 left-0 bg-secondary origin-bottom-right transition-transform duration-300 ease-out;
+  @apply content-[""] rounded-lg absolute w-full px-5 h-1 top-6 left-0 bg-link origin-bottom-right transition-transform duration-300 ease-out;
   transform: scaleX(0);
 }
 .underline-effect:hover:after {
-  @apply origin-bottom-left bg-link;
+  @apply origin-bottom-left bg-secondary;
   transform: scaleX(1);
 }

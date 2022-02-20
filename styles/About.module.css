@@ -7,11 +7,11 @@
 }
 
 .meta h3 {
-  @apply text-4xl font-medium leading-relaxed tracking-wide;
+  @apply text-4xl font-medium leading-relaxed tracking-wide whitespace-nowrap;
 }
 
 .profile-picture {
-  @apply relative  w-[300px] h-[300px] mix-blend-multiply transition-all duration-300 mb-2;
+  @apply relative  w-[300px] h-[300px] mix-blend-multiply transition-all duration-300 mb-2 p-0;
 }
 
 .profile-picture img {

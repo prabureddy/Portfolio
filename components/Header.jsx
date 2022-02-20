@@ -25,11 +25,13 @@ const Header = () => {
   return (
     <nav className={cl(CSS.nav)}>
       <div className={cl(CSS.container)}>
-        <span className={cl(CSS.logo)}>Logo</span>
+        <div className={cl(CSS.logo)} tabIndex="0">
+          <a href="#">Logo</a>
+        </div>
         <ol className={cl(CSS.pages)}>
           {navItems.map(({ label, link }, i) => (
-            <li key={i}>
-              <a href={link} className={cl(CSS["nav-item"])} tabIndex={-1}>
+            <li key={i} tabIndex="0">
+              <a href={link} className={cl(CSS["nav-item"])} tabIndex="-1">
                 <span>{i + 1}.</span>
                 {label}
               </a>
