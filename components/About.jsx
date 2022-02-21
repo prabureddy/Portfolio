@@ -1,8 +1,6 @@
 import React from "react";
-import Image from "next/image";
 import CSS from "../styles/About.module.css";
 import cl from "classnames";
-import PROFILE_PIC from "../public/images/me.jpg";
 
 const About = () => {
   return (
@@ -11,9 +9,8 @@ const About = () => {
         <div className={cl(CSS.meta)}>
           <h3 className={cl(CSS.name)}>Bhargava Prabu Reddy.</h3>
           <div className={cl(CSS["profile-picture"])}>
-            <Image
-              layout="fill"
-              src={PROFILE_PIC}
+            <img
+              src="/images/me.jpg"
               alt="Bhargava Prabu Reddy"
               className={cl(CSS["profile-pic"])}
             />
