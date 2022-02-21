@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  height: 100%;
+}
+
+body {
+  @apply cursor-cell;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  @apply font-bold text-link cursor-ne-resize inline-block relative;
+}
+
+section {
+  @apply h-full w-full;
+}
+
+p > a:focus {
+  @apply outline-none;
+}
+
+:focus {
+  @apply outline-4 outline-dashed outline-red-300 outline-offset-4;
+}
+
+.underline {
+  display: inline;
+  position: relative;
+  overflow: hidden;
+}
+
+.underline-effect {
+  @apply inline-block relative;
+}
+
+.underline-effect:after {
+  @apply content-[""] rounded-lg absolute w-full px-5 h-1 top-6 left-0 bg-link origin-bottom-right transition-transform duration-300 ease-out;
+  transform: scaleX(0);
+}
+.underline-effect:hover:after {
+  @apply origin-bottom-left bg-secondary;
+  transform: scaleX(1);
+}
